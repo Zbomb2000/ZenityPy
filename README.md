@@ -4,7 +4,7 @@ Zenity support for Python on Linux
 
 - from ZenityPy import zenity
 
-### Setup
+## Setup
 
 Run the "install" file:
 - Change the directory to the main package file
@@ -12,5 +12,5 @@ Run the "install" file:
 - Type: ```./install.sh```
 The package should then be set up.
 
-### Functions
+## Functions
 - ```zenity.warn()```
