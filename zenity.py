@@ -1,6 +1,9 @@
 import subprocess
+import os
+
+cd = os.getcwd()
 
 def warn():
-    subprocess.Popen(["/mnt/chromeos/MyFiles/Package/ZenityFiles/warning.sh"])
+    subprocess.Popen([cd + "/ZenityFiles/warning.sh"])
     print("hi")
     
