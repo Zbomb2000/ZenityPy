@@ -1,4 +1,4 @@
-# Zenity.py
+# ZenityPy
 
 Zenity support for Python on Linux
 
