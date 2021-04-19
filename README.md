@@ -10,5 +10,5 @@ Run the "install" file:
 - Type: ```./install.sh```
 The package should then be set up.
 
-# Modules
+# Functions
 - ```zenity.warn()```
