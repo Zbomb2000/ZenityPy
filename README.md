@@ -9,7 +9,7 @@ Zenity support for Python on Linux
 Run the "install" file:
 - Change the directory to the main package file
 - Type ```chmod +x install.sh```
-- Type: ```./install.sh```
+- Type: ```./install.sh```.
 The package should then be set up.
 
 ## Functions
