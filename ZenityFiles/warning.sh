@@ -1,3 +1,6 @@
 #! /bin/bash
 
-zenity --warning
+TEXT=$(cat '/mnt/chromeos/MyFiles/ZenityPy/ZenityFiles/text.txt')
+
+zenity --warning \
+--text="$TEXT"
