@@ -13,4 +13,4 @@ Run the "install" file:
 The package should then be set up.
 
 ## Functions
-- ```zenity.warn()```
+- ```zenity.warning("TEXT")``` This sends a warning. Replace TEXT with the message you want to send with the warning.
