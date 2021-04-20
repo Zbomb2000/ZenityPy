@@ -8,5 +8,4 @@ def warning(text):
     f = open(cd+"/ZenityFiles/text.txt", "w")
     f.write(str(text))
     f.close()
-    print(text)
     subprocess.Popen([cd+"/ZenityFiles/warning.sh"])
