@@ -1,9 +1,12 @@
 import subprocess
 import os
 
-cd = os.getcwd()
+cd = os.path.realpath('ZenityPy')
+# /mnt/chromeos/MyFiles/ZenityPy/
 
-def warn():
-    subprocess.Popen([cd + "/ZenityFiles/warning.sh"])
-    print("hi")
-    
+def warning(text):
+    f = open(cd+"/ZenityFiles/text.txt", "w")
+    f.write(str(text))
+    f.close()
+    print(text)
+    subprocess.Popen([cd+"/ZenityFiles/warning.sh"])
