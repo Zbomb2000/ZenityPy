@@ -7,3 +7,5 @@ SCRIPTPATH=$(dirname "$SCRIPT")
 # This gives execution permission for the .sh scripts:
 chmod +x "$SCRIPTPATH/ZenityFiles/warning.sh"
 chmod +x "$SCRIPTPATH/ZenityFiles/info.sh"
+chmod +x "$SCRIPTPATH/ZenityFiles/question.sh"
+chmod +x "$SCRIPTPATH/ZenityFiles/error.sh"
