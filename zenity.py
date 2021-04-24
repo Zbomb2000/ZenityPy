@@ -26,3 +26,9 @@ def error(text):
     f.write(str(text))
     f.close()
     subprocess.Popen([cd+"/ZenityFiles/error.sh"])
+
+def help():
+    print("")
+    print("zenity.info(TEXT) ; Replace 'TEXT' with the message you want to send. Same thing for 'error', 'warning', and 'question'.")
+    print("")
+
