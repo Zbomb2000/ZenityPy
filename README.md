@@ -2,6 +2,9 @@
 
 Zenity support for Python on Linux
 
+
+## Modules
+The only current module is the main zenity module.
 - ```from ZenityPy import zenity```
 
 ## Setup
