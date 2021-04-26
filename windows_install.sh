@@ -10,5 +10,6 @@ dos2unix "$DIR/ZenityFiles/info.sh"
 dos2unix "$DIR/ZenityFiles/question.sh"
 dos2unix "$DIR/ZenityFiles/password.sh"
 dos2unix "$DIR/ZenityFiles/color_selection.sh"
+dos2unix "$DIR/ZenityFiles/file_selection.sh"
 
 echo "Done!"
