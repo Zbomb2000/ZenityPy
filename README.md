@@ -13,5 +13,5 @@ Run the "install" file:
 The package should then be set up.
 
 ## Functions
-- ```zenity.warning("TEXT")``` This sends a warning. Replace TEXT with the message you want to send with the warning.
+- ```zenity.info("TEXT")``` This sends a message box. Replace TEXT with the message you want to send with the warning (Also used with ```zenity.question()```, ```zenity.error()```, and ```zenity.warning()```).
 - ```zenity.password()``` This creates a password messege box. You can use it this way: ```random_var = zenity.password()```.
