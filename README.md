@@ -16,4 +16,4 @@ The package should then be set up.
 - ```zenity.info("TEXT")``` This sends a message box. Replace TEXT with the message you want to send with the warning (Also used with ```zenity.question()```, ```zenity.error()```, and ```zenity.warning()```).
 - ```zenity.password()``` This creates a password messege box. This returns a string.
 - ```zenity.color_selection()``` This creates a color selection messege box. This returns an rgb value.
-- ```zenity.file_selection()``` This creates a file selection messege box. This returns a file path.7
+- ```zenity.file_selection()``` This creates a file selection messege box. This returns a file path.
