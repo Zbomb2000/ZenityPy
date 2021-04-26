@@ -42,6 +42,21 @@ def password():
     size = len(password_var)
     return password_var[:size - 1]
 
+def color_selection():
+    subprocess.Popen([cd+"/ZenityFiles/color_selection.sh"])
+    f = open(cd+"/ZenityFiles/text.txt", "r")
+    wait_var1 = f.read()
+    while (True):
+        f = open(cd+"/ZenityFiles/text.txt", "r")
+        wait_var = f.read()
+        if wait_var != wait_var1:
+            break
+    f = open(cd+"/ZenityFiles/text.txt", "r")
+    rgb_var = f.read()
+    f.close()
+    size = len(rgb_var)
+    return rgb_var[:size - 1]
+
 def help():
     print("")
     print("zenity.info(TEXT) ; Replace 'TEXT' with the message you want to send. Same thing for 'error', 'warning', and 'question'.")
