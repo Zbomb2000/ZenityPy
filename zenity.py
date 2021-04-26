@@ -8,24 +8,28 @@ def warning(text):
     f.write(str(text))
     f.close()
     subprocess.Popen([cd+"/ZenityFiles/warning.sh"])
+    return
 
 def info(text):
     f = open(cd+"/ZenityFiles/text.txt", "w")
     f.write(str(text))
     f.close()
     subprocess.Popen([cd+"/ZenityFiles/info.sh"])
+    return
 
 def question(text):
     f = open(cd+"/ZenityFiles/text.txt", "w")
     f.write(str(text))
     f.close()
     subprocess.Popen([cd+"/ZenityFiles/question.sh"])
+    return
 
 def error(text):
     f = open(cd+"/ZenityFiles/text.txt", "w")
     f.write(str(text))
     f.close()
     subprocess.Popen([cd+"/ZenityFiles/error.sh"])
+    return
 
 def password():
     subprocess.Popen([cd+"/ZenityFiles/password.sh"])
