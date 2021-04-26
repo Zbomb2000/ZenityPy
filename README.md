@@ -2,7 +2,7 @@
 
 Zenity support for Python on Linux
 
-- from ZenityPy import zenity
+- ```from ZenityPy import zenity```
 
 ## Setup
 
