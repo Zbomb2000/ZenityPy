@@ -76,6 +76,13 @@ def file_selection():
     size = len(file_path_var)
     return file_path_var[:size - 1]
 
+def notification(text):
+    f = open(cd+"/ZenityFiles/text.txt", "w")
+    f.write(text)
+    f.close()
+    subprocess.Popen([cd+"/ZenityFiles/notification.sh"])
+    return text
+
 def help():
     print("")
     print("zenity.info(TEXT) ; Replace 'TEXT' with the message you want to send. Same thing for 'error', 'warning', and 'question'.")
