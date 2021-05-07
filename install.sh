@@ -12,3 +12,6 @@ chmod +x "$SCRIPTPATH/ZenityFiles/error.sh"
 chmod +x "$SCRIPTPATH/ZenityFiles/password.sh"
 chmod +x "$SCRIPTPATH/ZenityFiles/color_selection.sh"
 chmod +x "$SCRIPTPATH/ZenityFiles/file_selection.sh"
+chmod +x "$SCRIPTPATH/ZenityFiles/notification.sh"
+
+echo "Done!"
