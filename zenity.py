@@ -83,6 +83,60 @@ def notification(text):
     subprocess.Popen([cd+"/ZenityFiles/notification.sh"])
     return text
 
+def scale(text):
+    f = open(cd+"/ZenityFiles/text.txt", "w")
+    f.write(str(text))
+    f.close()
+    subprocess.Popen([cd+"/ZenityFiles/scale.sh"])
+    f = open(cd+"/ZenityFiles/text.txt", "r")
+    wait_var1 = f.read()
+    while (True):
+        f = open(cd+"/ZenityFiles/text.txt", "r")
+        wait_var = f.read()
+        if wait_var != wait_var1:
+            break
+    f = open(cd+"/ZenityFiles/text.txt", "r")
+    scale_var = f.read()
+    f.close()
+    size = len(scale_var)
+    return scale_var[:size - 1]
+
+def entry(text):
+    f = open(cd+"/ZenityFiles/text.txt", "w")
+    f.write(str(text))
+    f.close()
+    subprocess.Popen([cd+"/ZenityFiles/entry.sh"])
+    f = open(cd+"/ZenityFiles/text.txt", "r")
+    wait_var1 = f.read()
+    while (True):
+        f = open(cd+"/ZenityFiles/text.txt", "r")
+        wait_var = f.read()
+        if wait_var != wait_var1:
+            break
+    f = open(cd+"/ZenityFiles/text.txt", "r")
+    entry_var = f.read()
+    f.close()
+    size = len(entry_var)
+    return entry_var[:size - 1]
+
+def calendar(text):
+    f = open(cd+"/ZenityFiles/text.txt", "w")
+    f.write(str(text))
+    f.close()
+    subprocess.Popen([cd+"/ZenityFiles/calendar.sh"])
+    f = open(cd+"/ZenityFiles/text.txt", "r")
+    wait_var1 = f.read()
+    while (True):
+        f = open(cd+"/ZenityFiles/text.txt", "r")
+        wait_var = f.read()
+        if wait_var != wait_var1:
+            break
+    f = open(cd+"/ZenityFiles/text.txt", "r")
+    calendar_var = f.read()
+    f.close()
+    size = len(calendar_var)
+    return calendar_var[:size - 1]
+
 def help():
     print("")
     print("zenity.info(TEXT) ; Replace 'TEXT' with the message you want to send. Same thing for 'error', 'warning', and 'question'.")
