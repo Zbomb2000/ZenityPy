@@ -1,0 +1,18 @@
+h1 {
+    font-family : arial;
+    color : red;
+    text-align : center;
+}
+
+body {
+    background-color : black;
+}
+
+.regular_font {
+    font-family : arial;
+    color : blue;
+}
+
+#test {
+    color : yellow;
+}
