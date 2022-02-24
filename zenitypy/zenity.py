@@ -1,11 +1,23 @@
 #!/usr/bin/python3
 import subprocess
 
-def password():
-    pw_input = subprocess.check_output(['zenity', '--password'])
-    pw1 = pw_input.decode("utf-8")
-    pw2 = pw1[:len(pw1) - 1]
-    return pw2
+def password(*args, **kwargs):
+    uname = kwargs.get('uname', False)
+    if uname:
+        raw_input = subprocess.check_output(['zenity', '--password', '--username'])
+        full_input = raw_input.decode("utf-8")
+        full_input1 = full_input.split('|')
+
+        un_input = full_input1[0]
+        pw_input = (full_input1[1])[:len(full_input1[1]) - 1]
+        un_pw = [un_input, pw_input]
+
+        return un_pw
+    else:
+        pw_input = subprocess.check_output(['zenity', '--password'])
+        pw1 = pw_input.decode("utf-8")
+        pw2 = pw1[:len(pw1) - 1]
+        return pw2
 
 def warning(*args, **kwargs):
     text1 = kwargs.get('text', "Are you sure you want to proceed?")
